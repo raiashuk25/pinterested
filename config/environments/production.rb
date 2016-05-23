@@ -84,6 +84,8 @@ config.paperclip_defaults= {
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
-  
+  Paperclip::Attachment.default_options[:url] = ':ashutech.s3.amazonaws.com'
+Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
 }
+
 end
