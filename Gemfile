@@ -10,7 +10,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-gem 'aws-sdk', '~> 2.3', '>= 2.3.7'
+#gem 'aws-sdk', '~> 2.3', '>= 2.3.7'
+gem 'aws-sdk', '< 2.0'
 group :development, :test do
   gem 'byebug'
 end
