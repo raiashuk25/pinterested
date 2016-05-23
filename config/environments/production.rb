@@ -6,11 +6,10 @@ Rails.application.configure do
   :s3_credentials => {
     :bucket => ENV['S3_BUCKET_NAME'],
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
 
   }
-           Paperclip::Attachment.default_options[:url] = 'https://ashutech.s3.amazonaws.com'
-Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
+ 
   }
 
 
@@ -90,5 +89,6 @@ Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partitio
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = {host: 'https://newpins.herokuapp.com/',port: 3000}
+  
  
  end
