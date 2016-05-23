@@ -9,8 +9,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'devise', '~> 4.1', '>= 4.1.1'
-gem 'paperclip'
-gem 'aws-sdk', '~> 2.3'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'aws-sdk', '~> 2.3', '>= 2.3.7'
 group :development, :test do
   gem 'byebug'
 end
@@ -22,6 +22,6 @@ group :development, :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg',  '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg', '~> 0.18.4'
+  gem 'rails_12factor', '~> 0.0.3'
 end
